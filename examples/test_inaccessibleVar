@@ -1,0 +1,8 @@
+def foo() -> int: {
+    z: int;
+    z = 33;
+    return z;
+}
+
+y: int;
+y = y + z;

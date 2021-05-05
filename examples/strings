@@ -1,0 +1,7 @@
+s: str;
+s = "";
+print(s);
+s = "a";
+print(s);
+s = "abcdef";
+print(s);

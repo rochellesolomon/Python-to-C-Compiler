@@ -1,0 +1,4 @@
+def foo(a:bool, b:int) -> int: {
+    b = b + a;
+    return b;
+}

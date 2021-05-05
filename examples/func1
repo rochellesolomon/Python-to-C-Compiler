@@ -1,0 +1,26 @@
+def is_even(num: int)->bool: {
+    if num % 2 == 0: {
+        return True;
+    } else: {
+        return False;
+    }
+}
+
+def sum_all_even()->int: {
+    i: int;
+    i = 1;
+    sum : int;
+    sum = 0;
+    while i <= 100: {
+        if is_even(i): {
+            sum = sum + i;
+        }
+    i = i + 1;
+    }
+    return sum;
+}
+
+sum: int;
+sum = sum_all_even();
+print(sum);
+print(is_even(sum));

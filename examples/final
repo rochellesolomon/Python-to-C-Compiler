@@ -1,0 +1,54 @@
+def make_screams() -> list: {
+    r: list;
+    r = ["a", "!"];
+    r = r + ["a", "A", "!"];
+    r = r + ["A", "a", "A", "!"];
+    return r;
+}
+
+def make_durations() -> list: {
+    r: list;
+    r = [2, 3];
+    r = r + [4, 5, 3];
+    r = r + [6, 7, 8, 5];
+}
+
+def prolong(a: str, d: int) -> str: {
+    r: str;
+    i: int;
+    r = "";
+    i = 0;
+    while (i < d) : {
+        r = r + a;
+        i = i + 1;
+    }
+    return r;
+}
+
+def voice(s: list, d: list, length: int) -> str: {
+    temp: str;
+    temp = "";
+    i: int;
+    i = 0;
+    while (i < length) : {
+        ch: str;
+        duration: int;
+        ch = str(s[i]);
+        duration = int(d[i]);
+        temp = temp + prolong(ch, duration);
+        i = i + 1;
+    }
+    return temp;
+}
+
+scream: list;
+a_lot: list;
+
+scream = make_screams();
+a_lot = make_durations();
+
+print("This program screams a lot. It perfectly replicates the experience of being a UTM student.");
+print(voice(scream, a_lot, 9));
+print("CSC488 makes us scream a little bit less :)");
+print("Enjoy the shorter scream in reverse!");
+print(voice(scream, a_lot, 9)[::-3]);

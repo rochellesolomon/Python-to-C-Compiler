@@ -1,0 +1,6 @@
+foo: str;
+foo = "abcdef";
+print(str(foo[0]));
+print(str(foo[3]));
+print(str(foo[-1]));
+print(str(foo[10]));

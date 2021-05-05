@@ -1,0 +1,9 @@
+def foo(a:int)->int: {
+    return a;
+}
+
+def foo()->int: {
+    x: int;
+    x = 3;
+    return 3;
+}

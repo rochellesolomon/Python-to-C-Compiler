@@ -1,0 +1,6 @@
+foo: list;
+foo = [1, 2, 3, 4, 5, True];
+print(int (foo[3]));
+print(bool (foo[5]));
+print(bool (foo[-1]));
+print(int (foo[10]));

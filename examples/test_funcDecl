@@ -1,0 +1,7 @@
+def is_even(num: int)->bool: {
+    if num % 2 == 0: {
+        return 1;
+    } else: {
+        return False;
+    }
+}

@@ -1,0 +1,12 @@
+def foo () -> bool: {
+    flag : bool;
+    flag = True;
+    return flag;
+}
+def bar (a:bool, b: int) -> int: {
+    num : int;
+    num = 5;
+    return num;
+}
+print(foo());
+print(bar(True, 1));

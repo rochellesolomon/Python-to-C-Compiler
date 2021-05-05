@@ -1,0 +1,13 @@
+test1 : bool;
+test2 : bool;
+test3 : bool;
+test4 : bool;
+test5 : bool;
+test6 : bool;
+test1 = 1 + 2 == 3;
+test2 = 3 + 4 + 5 == 12;
+test3 = 1 + 2 * 3 == 7;
+test4 = -1 == 0-1;
+test5 = 2 * -1 == -2;
+test6 = (1 + 2) * 3 == 9;
+print(test1 and test2 and test3 and test4 and test5 and test6);

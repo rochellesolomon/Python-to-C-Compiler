@@ -1,0 +1,3 @@
+foo: bool;
+foo = True;
+print(foo[0]);

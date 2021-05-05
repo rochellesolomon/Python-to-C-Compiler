@@ -1,0 +1,6 @@
+def if_test(a:int, b:bool)->bool: {
+    if [a, b]: {
+        return b;
+    }
+}
+
